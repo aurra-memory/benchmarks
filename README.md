@@ -39,7 +39,7 @@ Two metrics, both with LLM-as-judge scoring:
 
 ```bash
 git clone https://github.com/aurra-memory/benchmarks
-cd aurra-memory-benchmarks
+cd benchmarks
 pip install -r requirements.txt
 
 cp .env.example .env
