@@ -1,0 +1,124 @@
+
+======================================================================
+SCORING: MEM0
+======================================================================
+
+[mem0] conv-26 — 100 memories to classify
+   classified 10/100
+   classified 20/100
+   classified 30/100
+   classified 40/100
+   classified 50/100
+   classified 60/100
+   classified 70/100
+   classified 80/100
+   classified 90/100
+   classified 100/100
+   📊 conv-26: 29.0% useful, 66.0% halluc, 8.0% junk
+
+[mem0] conv-30 — 14 memories to classify
+   classified 10/14
+   classified 14/14
+   📊 conv-30: 21.4% useful, 78.6% halluc, 0.0% junk
+
+[mem0] conv-41 — 53 memories to classify
+   classified 10/53
+   classified 20/53
+   classified 30/53
+   classified 40/53
+   classified 50/53
+   classified 53/53
+   📊 conv-41: 43.4% useful, 54.7% halluc, 3.8% junk
+
+[mem0] conv-42 — 100 memories to classify
+   classified 10/100
+   classified 20/100
+   classified 30/100
+   classified 40/100
+   classified 50/100
+   classified 60/100
+   classified 70/100
+   classified 80/100
+   classified 90/100
+   classified 100/100
+   📊 conv-42: 32.0% useful, 63.0% halluc, 7.0% junk
+
+[mem0] conv-43 — 66 memories to classify
+   classified 10/66
+   classified 20/66
+   classified 30/66
+   classified 40/66
+   classified 50/66
+   classified 60/66
+   classified 66/66
+   📊 conv-43: 16.7% useful, 65.2% halluc, 7.6% junk
+
+[mem0] conv-44 — 47 memories to classify
+   classified 10/47
+   classified 20/47
+   classified 30/47
+   classified 40/47
+   classified 47/47
+   📊 conv-44: 21.3% useful, 55.3% halluc, 0.0% junk
+
+[mem0] conv-47 — 100 memories to classify
+   classified 10/100
+   classified 20/100
+   classified 30/100
+   classified 40/100
+   classified 50/100
+   classified 60/100
+   classified 70/100
+   classified 80/100
+   classified 90/100
+   classified 100/100
+   📊 conv-47: 19.0% useful, 78.0% halluc, 3.0% junk
+
+[mem0] conv-48 — 100 memories to classify
+   classified 10/100
+   classified 20/100
+   classified 30/100
+   classified 40/100
+   classified 50/100
+   classified 60/100
+   classified 70/100
+   classified 80/100
+   classified 90/100
+   classified 100/100
+   📊 conv-48: 34.0% useful, 60.0% halluc, 4.0% junk
+
+[mem0] conv-49 — 100 memories to classify
+   classified 10/100
+   classified 20/100
+   classified 30/100
+   classified 40/100
+   classified 50/100
+   classified 60/100
+   classified 70/100
+   classified 80/100
+   classified 90/100
+   classified 100/100
+   📊 conv-49: 22.0% useful, 74.0% halluc, 8.0% junk
+
+[mem0] conv-50 — 100 memories to classify
+   classified 10/100
+   classified 20/100
+   classified 30/100
+   classified 40/100
+   classified 50/100
+   classified 60/100
+   classified 70/100
+   classified 80/100
+   classified 90/100
+   classified 100/100
+   📊 conv-50: 37.0% useful, 53.0% halluc, 9.0% junk
+
+======================================================================
+MEM0 AGGREGATE: 780 memories
+  Useful:         220 (28.2%)
+  Hallucinated:   503 (64.5%)
+  Junk:            46 (5.9%)
+  Misattributed:   56 (7.2%)
+======================================================================
+
+✅ Saved /Users/shubhtrivedi/Desktop/aurra/benchmarks/locomo/results/junk_score_mem0.json

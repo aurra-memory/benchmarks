@@ -1,0 +1,318 @@
+
+======================================================================
+SCORING: AURRA
+======================================================================
+
+[aurra] conv-26 — 208 memories to classify
+   classified 10/208
+   classified 20/208
+   classified 30/208
+   classified 40/208
+   classified 50/208
+   classified 60/208
+   classified 70/208
+   classified 80/208
+   classified 90/208
+   classified 100/208
+   classified 110/208
+   classified 120/208
+   classified 130/208
+   classified 140/208
+   classified 150/208
+   classified 160/208
+   classified 170/208
+   classified 180/208
+   classified 190/208
+   classified 200/208
+   classified 208/208
+   📊 conv-26: 37.5% useful, 61.1% halluc, 1.9% junk
+
+[aurra] conv-30 — 163 memories to classify
+   classified 10/163
+   classified 20/163
+   classified 30/163
+   classified 40/163
+   classified 50/163
+   classified 60/163
+   classified 70/163
+   classified 80/163
+   classified 90/163
+   classified 100/163
+   classified 110/163
+   classified 120/163
+   classified 130/163
+   classified 140/163
+   classified 150/163
+   classified 160/163
+   classified 163/163
+   📊 conv-30: 50.9% useful, 47.9% halluc, 1.8% junk
+
+[aurra] conv-41 — 293 memories to classify
+   classified 10/293
+   classified 20/293
+   classified 30/293
+   classified 40/293
+   classified 50/293
+   classified 60/293
+   classified 70/293
+   classified 80/293
+   classified 90/293
+   classified 100/293
+   classified 110/293
+   classified 120/293
+   classified 130/293
+   classified 140/293
+   classified 150/293
+   classified 160/293
+   classified 170/293
+   classified 180/293
+   classified 190/293
+   classified 200/293
+   classified 210/293
+   classified 220/293
+   classified 230/293
+   classified 240/293
+   classified 250/293
+   classified 260/293
+   classified 270/293
+   classified 280/293
+   classified 290/293
+   classified 293/293
+   📊 conv-41: 44.0% useful, 53.9% halluc, 2.4% junk
+
+[aurra] conv-42 — 308 memories to classify
+   classified 10/308
+   classified 20/308
+   classified 30/308
+   classified 40/308
+   classified 50/308
+   classified 60/308
+   classified 70/308
+   classified 80/308
+   classified 90/308
+   classified 100/308
+   classified 110/308
+   classified 120/308
+   classified 130/308
+   classified 140/308
+   classified 150/308
+   classified 160/308
+   classified 170/308
+   classified 180/308
+   classified 190/308
+   classified 200/308
+   classified 210/308
+   classified 220/308
+   classified 230/308
+   classified 240/308
+   classified 250/308
+   classified 260/308
+   classified 270/308
+   classified 280/308
+   classified 290/308
+   classified 300/308
+   classified 308/308
+   📊 conv-42: 41.6% useful, 55.8% halluc, 3.6% junk
+
+[aurra] conv-43 — 304 memories to classify
+   classified 10/304
+   classified 20/304
+   classified 30/304
+   classified 40/304
+   classified 50/304
+   classified 60/304
+   classified 70/304
+   classified 80/304
+   classified 90/304
+   classified 100/304
+   classified 110/304
+   classified 120/304
+   classified 130/304
+   classified 140/304
+   classified 150/304
+   classified 160/304
+   classified 170/304
+   classified 180/304
+   classified 190/304
+   classified 200/304
+   classified 210/304
+   classified 220/304
+   classified 230/304
+   classified 240/304
+   classified 250/304
+   classified 260/304
+   classified 270/304
+   classified 280/304
+   classified 290/304
+   classified 300/304
+   classified 304/304
+   📊 conv-43: 38.8% useful, 60.2% halluc, 3.3% junk
+
+[aurra] conv-44 — 276 memories to classify
+   classified 10/276
+   classified 20/276
+   classified 30/276
+   classified 40/276
+   classified 50/276
+   classified 60/276
+   classified 70/276
+   classified 80/276
+   classified 90/276
+   classified 100/276
+   classified 110/276
+   classified 120/276
+   classified 130/276
+   classified 140/276
+   classified 150/276
+   classified 160/276
+   classified 170/276
+   classified 180/276
+   classified 190/276
+   classified 200/276
+   classified 210/276
+   classified 220/276
+   classified 230/276
+   classified 240/276
+   classified 250/276
+   classified 260/276
+   classified 270/276
+   classified 276/276
+   📊 conv-44: 43.1% useful, 54.0% halluc, 2.9% junk
+
+[aurra] conv-47 — 332 memories to classify
+   classified 10/332
+   classified 20/332
+   classified 30/332
+   classified 40/332
+   classified 50/332
+   classified 60/332
+   classified 70/332
+   classified 80/332
+   classified 90/332
+   classified 100/332
+   classified 110/332
+   classified 120/332
+   classified 130/332
+   classified 140/332
+   classified 150/332
+   classified 160/332
+   classified 170/332
+   classified 180/332
+   classified 190/332
+   classified 200/332
+   classified 210/332
+   classified 220/332
+   classified 230/332
+   classified 240/332
+   classified 250/332
+   classified 260/332
+   classified 270/332
+   classified 280/332
+   classified 290/332
+   classified 300/332
+   classified 310/332
+   classified 320/332
+   classified 330/332
+   classified 332/332
+   📊 conv-47: 34.9% useful, 63.6% halluc, 1.5% junk
+
+[aurra] conv-48 — 292 memories to classify
+   classified 10/292
+   classified 20/292
+   classified 30/292
+   classified 40/292
+   classified 50/292
+   classified 60/292
+   classified 70/292
+   classified 80/292
+   classified 90/292
+   classified 100/292
+   classified 110/292
+   classified 120/292
+   classified 130/292
+   classified 140/292
+   classified 150/292
+   classified 160/292
+   classified 170/292
+   classified 180/292
+   classified 190/292
+   classified 200/292
+   classified 210/292
+   classified 220/292
+   classified 230/292
+   classified 240/292
+   classified 250/292
+   classified 260/292
+   classified 270/292
+   classified 280/292
+   classified 290/292
+   classified 292/292
+   📊 conv-48: 44.5% useful, 51.7% halluc, 3.4% junk
+
+[aurra] conv-49 — 236 memories to classify
+   classified 10/236
+   classified 20/236
+   classified 30/236
+   classified 40/236
+   classified 50/236
+   classified 60/236
+   classified 70/236
+   classified 80/236
+   classified 90/236
+   classified 100/236
+   classified 110/236
+   classified 120/236
+   classified 130/236
+   classified 140/236
+   classified 150/236
+   classified 160/236
+   classified 170/236
+   classified 180/236
+   classified 190/236
+   classified 200/236
+   classified 210/236
+   classified 220/236
+   classified 230/236
+   classified 236/236
+   📊 conv-49: 47.0% useful, 50.4% halluc, 1.7% junk
+
+[aurra] conv-50 — 273 memories to classify
+   classified 10/273
+   classified 20/273
+   classified 30/273
+   classified 40/273
+   classified 50/273
+   classified 60/273
+   classified 70/273
+   classified 80/273
+   classified 90/273
+   classified 100/273
+   classified 110/273
+   classified 120/273
+   classified 130/273
+   classified 140/273
+   classified 150/273
+   classified 160/273
+   classified 170/273
+   classified 180/273
+   classified 190/273
+   classified 200/273
+   classified 210/273
+   classified 220/273
+   classified 230/273
+   classified 240/273
+   classified 250/273
+   classified 260/273
+   classified 270/273
+   classified 273/273
+   📊 conv-50: 46.5% useful, 50.2% halluc, 3.3% junk
+
+======================================================================
+AURRA AGGREGATE: 2685 memories
+  Useful:        1139 (42.4%)
+  Hallucinated:  1485 (55.3%)
+  Junk:            71 (2.6%)
+  Misattributed:   45 (1.7%)
+======================================================================
+
+✅ Saved /Users/shubhtrivedi/Desktop/aurra/benchmarks/locomo/results/junk_score_aurra.json

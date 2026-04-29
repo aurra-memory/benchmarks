@@ -1,0 +1,25 @@
+======================================================================
+DATE HALLUCINATION AUDIT
+======================================================================
+AURRA: 2685 memories, 0 with absolute years (0.00%)
+MEM0:  780 memories, 179 with absolute years (22.95%)
+
+=== Aurra memories with years (likely legit references) ===
+
+=== Mem0 memories with years (likely fabricated dates) ===
+  [conv-26] year=2026
+    Assistant noted she has been married for five years as of April 2026, meaning she married around 2021.
+  [conv-26] year=2026
+    User shared a photo taken during a meetup with friends last week (around April 24, 2026).
+  [conv-26] year=2023
+    User reflected that they began their gender transition three years ago (around 2023) and noted how much personal growth they have experienced since then.
+  [conv-26] year=2026
+    Assistant (Melanie) mentions her kids are excited about the upcoming summer break and that the family is planning a camping trip in May 2026.
+  [conv-26] year=2025
+    Assistant painted a lake sunrise in 2025, noting the artwork is special to her.
+  [conv-26] year=2026
+    User attended an LGBTQ support group on April 28, 2026 and described the experience as powerful.
+  [conv-26] year=2026
+    At the April 28, 2026 LGBTQ support group, User felt accepted and gained courage to embrace their true self.
+  [conv-26] year=2026
+    Assistant purchased figurines on 2026-04-28, noting they remind them of family love.

@@ -1,0 +1,6 @@
+anthropic>=0.40.0
+mem0ai>=0.1.50
+python-dotenv>=1.0.0
+requests>=2.31.0
+matplotlib>=3.8.0
+tqdm>=4.66.0
