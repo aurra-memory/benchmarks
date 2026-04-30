@@ -6,7 +6,17 @@ Benchmarks comparing memory infrastructure systems for AI agents on the [LoCoMo]
 
 We built [Aurra](https://aurra.us) as a memory layer for AI agents and wanted to compare it honestly against existing systems. This repo contains the benchmark code, results, and methodology.
 
-**See the writeup:** [Mem0 thinks our 2023 conversation happened in 2026](https://aurra.us/blog/mem0-vs-aurra) *(blog link — update before publishing)*
+**See the writeup:** [Mem0 thinks our 2023 conversation happened in 2026](https://aurra.us/blog/mem0-vs-aurra)
+
+## April 30, 2026 update
+
+Three hours after publishing this benchmark, Aurra shipped three features mentioned on the marketing site:
+
+- **Source citations on every memory** — `source_citation` object on every record returned by `/memories/{company_id}` and `/agent/memories`
+- **Audit endpoint** — `GET /memories/{memory_id}/audit` returns full provenance, extraction metadata, and event history
+- **BYO-LLM** — `POST /agent/memories` accepts an optional `llm` field with per-request provider + key override (Anthropic + OpenAI supported)
+
+API contract and docs at [aurra.us](https://aurra.us). The benchmark methodology and results below are unchanged.
 
 ## April 29, 2026 baseline
 
