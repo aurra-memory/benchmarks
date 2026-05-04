@@ -1,0 +1,3172 @@
+{
+  "prompt_file": "level2_prompt_v1.md",
+  "cases_file": "test_cases_v3_1.jsonl",
+  "models": [
+    "claude-haiku-4-5-20251001",
+    "claude-sonnet-4-6"
+  ],
+  "elapsed_seconds": 561.3560268878937,
+  "timestamp": "2026-05-03T15:55:37.133641+00:00",
+  "metrics": {
+    "claude-haiku-4-5-20251001": {
+      "total": 121,
+      "correct": 113,
+      "errors": 0,
+      "accuracy": 0.9338842975206612,
+      "precision": {
+        "supersedes": 1.0,
+        "refines": 0.7916666666666666,
+        "independent": 0.9285714285714286
+      },
+      "recall": {
+        "supersedes": 0.9166666666666666,
+        "refines": 0.95,
+        "independent": 0.9512195121951219
+      },
+      "gated_supersedes_precision": 1.0,
+      "gated_supersedes_predicted_count": 55,
+      "category_accuracy": {
+        "ambiguous": 1.0,
+        "b2b_agent": 1.0,
+        "clear_supersession": 1.0,
+        "dietary": 1.0,
+        "financial": 1.0,
+        "generalization": 0.5,
+        "hardware_os": 1.0,
+        "health_medical": 1.0,
+        "hedging": 0.75,
+        "identity": 1.0,
+        "independent": 1.0,
+        "legal_status": 1.0,
+        "multi_entity": 1.0,
+        "negation": 1.0,
+        "payment_method": 1.0,
+        "project_status": 0.75,
+        "recurring_schedule": 0.6666666666666666,
+        "refinement": 1.0,
+        "reversion": 1.0,
+        "subscription": 1.0,
+        "subscription_tier": 0.5,
+        "subtle_supersession": 1.0,
+        "temporal_recency": 0.75,
+        "travel_location": 1.0,
+        "workplace_role": 1.0
+      },
+      "input_tokens": 144840,
+      "output_tokens": 8632,
+      "cost_usd": 0.188,
+      "case_details": [
+        {
+          "case_id": "002",
+          "category": "clear_supersession",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "001",
+          "category": "clear_supersession",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "004",
+          "category": "clear_supersession",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "003",
+          "category": "clear_supersession",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "006",
+          "category": "clear_supersession",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "005",
+          "category": "clear_supersession",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "008",
+          "category": "clear_supersession",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "007",
+          "category": "clear_supersession",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.96,
+          "match": true
+        },
+        {
+          "case_id": "009",
+          "category": "subtle_supersession",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.99,
+          "match": true
+        },
+        {
+          "case_id": "010",
+          "category": "subtle_supersession",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.96,
+          "match": true
+        },
+        {
+          "case_id": "011",
+          "category": "subtle_supersession",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "012",
+          "category": "subtle_supersession",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.96,
+          "match": true
+        },
+        {
+          "case_id": "013",
+          "category": "subtle_supersession",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "014",
+          "category": "subtle_supersession",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "015",
+          "category": "subtle_supersession",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "016",
+          "category": "subtle_supersession",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "017",
+          "category": "refinement",
+          "ground_truth": "refines",
+          "predicted": "refines",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "018",
+          "category": "refinement",
+          "ground_truth": "refines",
+          "predicted": "refines",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "019",
+          "category": "refinement",
+          "ground_truth": "refines",
+          "predicted": "refines",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "020",
+          "category": "refinement",
+          "ground_truth": "refines",
+          "predicted": "refines",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "021",
+          "category": "refinement",
+          "ground_truth": "refines",
+          "predicted": "refines",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "022",
+          "category": "refinement",
+          "ground_truth": "refines",
+          "predicted": "refines",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "023",
+          "category": "refinement",
+          "ground_truth": "refines",
+          "predicted": "refines",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "024",
+          "category": "refinement",
+          "ground_truth": "refines",
+          "predicted": "refines",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "025",
+          "category": "refinement",
+          "ground_truth": "refines",
+          "predicted": "refines",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "027",
+          "category": "independent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "026",
+          "category": "refinement",
+          "ground_truth": "refines",
+          "predicted": "refines",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "028",
+          "category": "independent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.99,
+          "match": true
+        },
+        {
+          "case_id": "029",
+          "category": "independent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "030",
+          "category": "independent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "031",
+          "category": "independent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "032",
+          "category": "independent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.99,
+          "match": true
+        },
+        {
+          "case_id": "033",
+          "category": "independent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.99,
+          "match": true
+        },
+        {
+          "case_id": "034",
+          "category": "independent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "036",
+          "category": "recurring_schedule",
+          "ground_truth": "refines",
+          "predicted": "independent",
+          "confidence": 0.92,
+          "match": false
+        },
+        {
+          "case_id": "035",
+          "category": "recurring_schedule",
+          "ground_truth": "independent",
+          "predicted": "refines",
+          "confidence": 0.92,
+          "match": false
+        },
+        {
+          "case_id": "039",
+          "category": "negation",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "038",
+          "category": "recurring_schedule",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.96,
+          "match": true
+        },
+        {
+          "case_id": "040",
+          "category": "negation",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "041",
+          "category": "negation",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.99,
+          "match": true
+        },
+        {
+          "case_id": "042",
+          "category": "negation",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "043",
+          "category": "identity",
+          "ground_truth": "refines",
+          "predicted": "refines",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "044",
+          "category": "identity",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "045",
+          "category": "identity",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "046",
+          "category": "identity",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.96,
+          "match": true
+        },
+        {
+          "case_id": "047",
+          "category": "ambiguous",
+          "ground_truth": "refines",
+          "predicted": "refines",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "049",
+          "category": "ambiguous",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "048",
+          "category": "ambiguous",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "050",
+          "category": "ambiguous",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "051",
+          "category": "b2b_agent",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "053",
+          "category": "b2b_agent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "052",
+          "category": "b2b_agent",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "054",
+          "category": "b2b_agent",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "055",
+          "category": "financial",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "056",
+          "category": "financial",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "057",
+          "category": "financial",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "058",
+          "category": "project_status",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "059",
+          "category": "project_status",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "060",
+          "category": "project_status",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "061",
+          "category": "project_status",
+          "ground_truth": "independent",
+          "predicted": "refines",
+          "confidence": 0.95,
+          "match": false
+        },
+        {
+          "case_id": "062",
+          "category": "travel_location",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "063",
+          "category": "travel_location",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "064",
+          "category": "travel_location",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "065",
+          "category": "travel_location",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "066",
+          "category": "health_medical",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "068",
+          "category": "health_medical",
+          "ground_truth": "refines",
+          "predicted": "refines",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "069",
+          "category": "legal_status",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "070",
+          "category": "legal_status",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "071",
+          "category": "legal_status",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "072",
+          "category": "subscription",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "073",
+          "category": "subscription",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "074",
+          "category": "subscription",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "075",
+          "category": "workplace_role",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "076",
+          "category": "workplace_role",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "077",
+          "category": "workplace_role",
+          "ground_truth": "refines",
+          "predicted": "refines",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "078",
+          "category": "hardware_os",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "079",
+          "category": "hardware_os",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "080",
+          "category": "hardware_os",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "081",
+          "category": "payment_method",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.94,
+          "match": true
+        },
+        {
+          "case_id": "082",
+          "category": "payment_method",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "083",
+          "category": "payment_method",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "084",
+          "category": "subscription_tier",
+          "ground_truth": "supersedes",
+          "predicted": "refines",
+          "confidence": 0.92,
+          "match": false
+        },
+        {
+          "case_id": "085",
+          "category": "subscription_tier",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "086",
+          "category": "dietary",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.99,
+          "match": true
+        },
+        {
+          "case_id": "088",
+          "category": "b2b_agent",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "087",
+          "category": "dietary",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "090",
+          "category": "b2b_agent",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "089",
+          "category": "b2b_agent",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "092",
+          "category": "recurring_schedule",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "091",
+          "category": "recurring_schedule",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "094",
+          "category": "reversion",
+          "ground_truth": "refines",
+          "predicted": "refines",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "093",
+          "category": "recurring_schedule",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.96,
+          "match": true
+        },
+        {
+          "case_id": "095",
+          "category": "reversion",
+          "ground_truth": "refines",
+          "predicted": "refines",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "096",
+          "category": "reversion",
+          "ground_truth": "refines",
+          "predicted": "refines",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "097",
+          "category": "reversion",
+          "ground_truth": "refines",
+          "predicted": "refines",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "098",
+          "category": "multi_entity",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "099",
+          "category": "multi_entity",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "100",
+          "category": "multi_entity",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "101",
+          "category": "multi_entity",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "102",
+          "category": "hedging",
+          "ground_truth": "supersedes",
+          "predicted": "independent",
+          "confidence": 0.78,
+          "match": false
+        },
+        {
+          "case_id": "103",
+          "category": "hedging",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "104",
+          "category": "hedging",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "105",
+          "category": "hedging",
+          "ground_truth": "refines",
+          "predicted": "refines",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "106",
+          "category": "generalization",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "107",
+          "category": "generalization",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "108",
+          "category": "generalization",
+          "ground_truth": "supersedes",
+          "predicted": "refines",
+          "confidence": 0.92,
+          "match": false
+        },
+        {
+          "case_id": "109",
+          "category": "generalization",
+          "ground_truth": "supersedes",
+          "predicted": "refines",
+          "confidence": 0.82,
+          "match": false
+        },
+        {
+          "case_id": "110",
+          "category": "temporal_recency",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "111",
+          "category": "temporal_recency",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "112",
+          "category": "temporal_recency",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "113",
+          "category": "temporal_recency",
+          "ground_truth": "supersedes",
+          "predicted": "independent",
+          "confidence": 0.92,
+          "match": false
+        },
+        {
+          "case_id": "114",
+          "category": "independent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "115",
+          "category": "independent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "116",
+          "category": "independent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "117",
+          "category": "independent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "118",
+          "category": "independent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "119",
+          "category": "independent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.98,
+          "match": true
+        },
+        {
+          "case_id": "120",
+          "category": "independent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.99,
+          "match": true
+        },
+        {
+          "case_id": "121",
+          "category": "independent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "122",
+          "category": "independent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "123",
+          "category": "independent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.92,
+          "match": true
+        }
+      ],
+      "disagreements": [
+        {
+          "case_id": "036",
+          "category": "recurring_schedule",
+          "old": "User runs every morning",
+          "new": "User went for a run this morning",
+          "ground_truth": "refines",
+          "predicted": "independent",
+          "confidence": 0.92,
+          "reasoning": "A single instance of running this morning does not supersede or refine the recurring pattern of running every morning; both facts coexist and the instance is already entailed by the pattern."
+        },
+        {
+          "case_id": "035",
+          "category": "recurring_schedule",
+          "old": "User has Tuesday team meetings",
+          "new": "User has a team meeting this Tuesday at 3pm",
+          "ground_truth": "independent",
+          "predicted": "refines",
+          "confidence": 0.92,
+          "reasoning": "The NEW memory adds a specific time and instance to the recurring pattern described in the OLD memory; both facts coexist (Tuesday meetings exist, and this Tuesday's meeting happens at 3pm)."
+        },
+        {
+          "case_id": "061",
+          "category": "project_status",
+          "old": "Bug 1234 is open",
+          "new": "Bug 1234 is also affecting mobile",
+          "ground_truth": "independent",
+          "predicted": "refines",
+          "confidence": 0.95,
+          "reasoning": "The NEW memory adds a specific detail about the scope/impact of the same bug without contradicting the fact that it remains open; 'also' signals additive information rather than replacement."
+        },
+        {
+          "case_id": "084",
+          "category": "subscription_tier",
+          "old": "User is on Aurra Starter monthly plan",
+          "new": "User switched to annual billing on Starter plan",
+          "ground_truth": "supersedes",
+          "predicted": "refines",
+          "confidence": 0.92,
+          "reasoning": "The NEW memory adds a billing frequency detail (annual instead of monthly) to the same plan tier (Starter), refining the OLD memory without contradicting it\u2014both facts can coexist and the NEW fact is a more complete description of the user's current subscription state."
+        },
+        {
+          "case_id": "102",
+          "category": "hedging",
+          "old": "User is moving to Austin in June",
+          "new": "User is now thinking about Nashville instead of Austin",
+          "ground_truth": "supersedes",
+          "predicted": "independent",
+          "confidence": 0.78,
+          "reasoning": "The NEW memory uses hedged language ('thinking about') indicating a non-committal consideration, not a firm change, so both the firm June Austin plan and the tentative Nashville exploration should be retained as separate facts pending commitment."
+        },
+        {
+          "case_id": "108",
+          "category": "generalization",
+          "old": "User does not eat shellfish",
+          "new": "User keeps kosher and avoids all non-kosher seafood",
+          "ground_truth": "supersedes",
+          "predicted": "refines",
+          "confidence": 0.92,
+          "reasoning": "The NEW memory provides a specific reason and broader framework for the OLD fact (shellfish avoidance is part of kosher dietary law), adding meaningful context without contradicting the original restriction."
+        },
+        {
+          "case_id": "109",
+          "category": "generalization",
+          "old": "User dislikes meetings before 10am",
+          "new": "User has decided to block all mornings for deep work",
+          "ground_truth": "supersedes",
+          "predicted": "refines",
+          "confidence": 0.82,
+          "reasoning": "The NEW memory provides a specific behavioral implementation and underlying reason for the OLD preference (disliking early meetings), rather than contradicting it\u2014blocking all mornings for deep work naturally prevents and explains the aversion to pre-10am meetings."
+        },
+        {
+          "case_id": "113",
+          "category": "temporal_recency",
+          "old": "User mentioned being stressed last month",
+          "new": "User says she is doing better now",
+          "ground_truth": "supersedes",
+          "predicted": "independent",
+          "confidence": 0.92,
+          "reasoning": "Both facts are timestamped to different periods (last month vs. now); they describe the same attribute (emotional state) at different points in time, both remain factually true and informative."
+        }
+      ]
+    },
+    "claude-sonnet-4-6": {
+      "total": 121,
+      "correct": 114,
+      "errors": 0,
+      "accuracy": 0.9421487603305785,
+      "precision": {
+        "supersedes": 0.9830508474576272,
+        "refines": 0.782608695652174,
+        "independent": 0.9743589743589743
+      },
+      "recall": {
+        "supersedes": 0.9666666666666667,
+        "refines": 0.9,
+        "independent": 0.926829268292683
+      },
+      "gated_supersedes_precision": 0.9827586206896551,
+      "gated_supersedes_predicted_count": 58,
+      "category_accuracy": {
+        "ambiguous": 1.0,
+        "b2b_agent": 1.0,
+        "clear_supersession": 1.0,
+        "dietary": 1.0,
+        "financial": 1.0,
+        "generalization": 1.0,
+        "hardware_os": 1.0,
+        "health_medical": 0.5,
+        "hedging": 0.5,
+        "identity": 1.0,
+        "independent": 1.0,
+        "legal_status": 0.6666666666666666,
+        "multi_entity": 1.0,
+        "negation": 1.0,
+        "payment_method": 1.0,
+        "project_status": 0.75,
+        "recurring_schedule": 0.6666666666666666,
+        "refinement": 1.0,
+        "reversion": 1.0,
+        "subscription": 1.0,
+        "subscription_tier": 1.0,
+        "subtle_supersession": 1.0,
+        "temporal_recency": 1.0,
+        "travel_location": 1.0,
+        "workplace_role": 1.0
+      },
+      "input_tokens": 144961,
+      "output_tokens": 7517,
+      "cost_usd": 0.5476,
+      "case_details": [
+        {
+          "case_id": "001",
+          "category": "clear_supersession",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "002",
+          "category": "clear_supersession",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "004",
+          "category": "clear_supersession",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "003",
+          "category": "clear_supersession",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "005",
+          "category": "clear_supersession",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "006",
+          "category": "clear_supersession",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "007",
+          "category": "clear_supersession",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "008",
+          "category": "clear_supersession",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "009",
+          "category": "subtle_supersession",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "010",
+          "category": "subtle_supersession",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.9,
+          "match": true
+        },
+        {
+          "case_id": "011",
+          "category": "subtle_supersession",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "012",
+          "category": "subtle_supersession",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "013",
+          "category": "subtle_supersession",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "014",
+          "category": "subtle_supersession",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "015",
+          "category": "subtle_supersession",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "017",
+          "category": "refinement",
+          "ground_truth": "refines",
+          "predicted": "refines",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "016",
+          "category": "subtle_supersession",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "018",
+          "category": "refinement",
+          "ground_truth": "refines",
+          "predicted": "refines",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "019",
+          "category": "refinement",
+          "ground_truth": "refines",
+          "predicted": "refines",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "021",
+          "category": "refinement",
+          "ground_truth": "refines",
+          "predicted": "refines",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "020",
+          "category": "refinement",
+          "ground_truth": "refines",
+          "predicted": "refines",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "022",
+          "category": "refinement",
+          "ground_truth": "refines",
+          "predicted": "refines",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "023",
+          "category": "refinement",
+          "ground_truth": "refines",
+          "predicted": "refines",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "024",
+          "category": "refinement",
+          "ground_truth": "refines",
+          "predicted": "refines",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "025",
+          "category": "refinement",
+          "ground_truth": "refines",
+          "predicted": "refines",
+          "confidence": 0.99,
+          "match": true
+        },
+        {
+          "case_id": "026",
+          "category": "refinement",
+          "ground_truth": "refines",
+          "predicted": "refines",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "027",
+          "category": "independent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "028",
+          "category": "independent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "029",
+          "category": "independent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.72,
+          "match": true
+        },
+        {
+          "case_id": "031",
+          "category": "independent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.82,
+          "match": true
+        },
+        {
+          "case_id": "030",
+          "category": "independent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "032",
+          "category": "independent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "033",
+          "category": "independent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.99,
+          "match": true
+        },
+        {
+          "case_id": "034",
+          "category": "independent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "035",
+          "category": "recurring_schedule",
+          "ground_truth": "independent",
+          "predicted": "refines",
+          "confidence": 0.87,
+          "match": false
+        },
+        {
+          "case_id": "036",
+          "category": "recurring_schedule",
+          "ground_truth": "refines",
+          "predicted": "independent",
+          "confidence": 0.85,
+          "match": false
+        },
+        {
+          "case_id": "039",
+          "category": "negation",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.99,
+          "match": true
+        },
+        {
+          "case_id": "038",
+          "category": "recurring_schedule",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "040",
+          "category": "negation",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.99,
+          "match": true
+        },
+        {
+          "case_id": "041",
+          "category": "negation",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.99,
+          "match": true
+        },
+        {
+          "case_id": "042",
+          "category": "negation",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "043",
+          "category": "identity",
+          "ground_truth": "refines",
+          "predicted": "refines",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "044",
+          "category": "identity",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "045",
+          "category": "identity",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "046",
+          "category": "identity",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "047",
+          "category": "ambiguous",
+          "ground_truth": "refines",
+          "predicted": "refines",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "048",
+          "category": "ambiguous",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "049",
+          "category": "ambiguous",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.72,
+          "match": true
+        },
+        {
+          "case_id": "050",
+          "category": "ambiguous",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "051",
+          "category": "b2b_agent",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "052",
+          "category": "b2b_agent",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "053",
+          "category": "b2b_agent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "054",
+          "category": "b2b_agent",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "055",
+          "category": "financial",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "056",
+          "category": "financial",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "057",
+          "category": "financial",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "059",
+          "category": "project_status",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "058",
+          "category": "project_status",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "060",
+          "category": "project_status",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "061",
+          "category": "project_status",
+          "ground_truth": "independent",
+          "predicted": "refines",
+          "confidence": 0.88,
+          "match": false
+        },
+        {
+          "case_id": "062",
+          "category": "travel_location",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "063",
+          "category": "travel_location",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.87,
+          "match": true
+        },
+        {
+          "case_id": "064",
+          "category": "travel_location",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.72,
+          "match": true
+        },
+        {
+          "case_id": "065",
+          "category": "travel_location",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "066",
+          "category": "health_medical",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.82,
+          "match": true
+        },
+        {
+          "case_id": "068",
+          "category": "health_medical",
+          "ground_truth": "refines",
+          "predicted": "supersedes",
+          "confidence": 0.92,
+          "match": false
+        },
+        {
+          "case_id": "069",
+          "category": "legal_status",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "070",
+          "category": "legal_status",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "071",
+          "category": "legal_status",
+          "ground_truth": "supersedes",
+          "predicted": "refines",
+          "confidence": 0.72,
+          "match": false
+        },
+        {
+          "case_id": "072",
+          "category": "subscription",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.72,
+          "match": true
+        },
+        {
+          "case_id": "073",
+          "category": "subscription",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "074",
+          "category": "subscription",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "075",
+          "category": "workplace_role",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.9,
+          "match": true
+        },
+        {
+          "case_id": "077",
+          "category": "workplace_role",
+          "ground_truth": "refines",
+          "predicted": "refines",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "076",
+          "category": "workplace_role",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "078",
+          "category": "hardware_os",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "079",
+          "category": "hardware_os",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "080",
+          "category": "hardware_os",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "081",
+          "category": "payment_method",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "082",
+          "category": "payment_method",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "083",
+          "category": "payment_method",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "084",
+          "category": "subscription_tier",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "085",
+          "category": "subscription_tier",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "086",
+          "category": "dietary",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.99,
+          "match": true
+        },
+        {
+          "case_id": "087",
+          "category": "dietary",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "089",
+          "category": "b2b_agent",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "088",
+          "category": "b2b_agent",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "090",
+          "category": "b2b_agent",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "091",
+          "category": "recurring_schedule",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "092",
+          "category": "recurring_schedule",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "093",
+          "category": "recurring_schedule",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "094",
+          "category": "reversion",
+          "ground_truth": "refines",
+          "predicted": "refines",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "095",
+          "category": "reversion",
+          "ground_truth": "refines",
+          "predicted": "refines",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "096",
+          "category": "reversion",
+          "ground_truth": "refines",
+          "predicted": "refines",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "097",
+          "category": "reversion",
+          "ground_truth": "refines",
+          "predicted": "refines",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "098",
+          "category": "multi_entity",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "099",
+          "category": "multi_entity",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "100",
+          "category": "multi_entity",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "101",
+          "category": "multi_entity",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "102",
+          "category": "hedging",
+          "ground_truth": "supersedes",
+          "predicted": "refines",
+          "confidence": 0.72,
+          "match": false
+        },
+        {
+          "case_id": "103",
+          "category": "hedging",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "104",
+          "category": "hedging",
+          "ground_truth": "independent",
+          "predicted": "refines",
+          "confidence": 0.85,
+          "match": false
+        },
+        {
+          "case_id": "105",
+          "category": "hedging",
+          "ground_truth": "refines",
+          "predicted": "refines",
+          "confidence": 0.87,
+          "match": true
+        },
+        {
+          "case_id": "106",
+          "category": "generalization",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "107",
+          "category": "generalization",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "108",
+          "category": "generalization",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.87,
+          "match": true
+        },
+        {
+          "case_id": "110",
+          "category": "temporal_recency",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.85,
+          "match": true
+        },
+        {
+          "case_id": "109",
+          "category": "generalization",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.87,
+          "match": true
+        },
+        {
+          "case_id": "111",
+          "category": "temporal_recency",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "112",
+          "category": "temporal_recency",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.82,
+          "match": true
+        },
+        {
+          "case_id": "114",
+          "category": "independent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.85,
+          "match": true
+        },
+        {
+          "case_id": "113",
+          "category": "temporal_recency",
+          "ground_truth": "supersedes",
+          "predicted": "supersedes",
+          "confidence": 0.82,
+          "match": true
+        },
+        {
+          "case_id": "115",
+          "category": "independent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "116",
+          "category": "independent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "117",
+          "category": "independent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.82,
+          "match": true
+        },
+        {
+          "case_id": "118",
+          "category": "independent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "119",
+          "category": "independent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.95,
+          "match": true
+        },
+        {
+          "case_id": "120",
+          "category": "independent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.97,
+          "match": true
+        },
+        {
+          "case_id": "121",
+          "category": "independent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.82,
+          "match": true
+        },
+        {
+          "case_id": "122",
+          "category": "independent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.92,
+          "match": true
+        },
+        {
+          "case_id": "123",
+          "category": "independent",
+          "ground_truth": "independent",
+          "predicted": "independent",
+          "confidence": 0.92,
+          "match": true
+        }
+      ],
+      "disagreements": [
+        {
+          "case_id": "035",
+          "category": "recurring_schedule",
+          "old": "User has Tuesday team meetings",
+          "new": "User has a team meeting this Tuesday at 3pm",
+          "ground_truth": "independent",
+          "predicted": "refines",
+          "confidence": 0.87,
+          "reasoning": "The new memory adds specific time detail (3pm) to the same recurring Tuesday team meeting without contradicting it."
+        },
+        {
+          "case_id": "036",
+          "category": "recurring_schedule",
+          "old": "User runs every morning",
+          "new": "User went for a run this morning",
+          "ground_truth": "refines",
+          "predicted": "independent",
+          "confidence": 0.85,
+          "reasoning": "A single instance of running this morning does not supersede the recurring pattern of running every morning; both facts can be true simultaneously."
+        },
+        {
+          "case_id": "061",
+          "category": "project_status",
+          "old": "Bug 1234 is open",
+          "new": "Bug 1234 is also affecting mobile",
+          "ground_truth": "independent",
+          "predicted": "refines",
+          "confidence": 0.88,
+          "reasoning": "The new fact adds detail about Bug 1234's scope (mobile impact) without contradicting or replacing the open status described in the old memory."
+        },
+        {
+          "case_id": "068",
+          "category": "health_medical",
+          "old": "User has type 2 diabetes",
+          "new": "User's diabetes is in remission",
+          "ground_truth": "refines",
+          "predicted": "supersedes",
+          "confidence": 0.92,
+          "reasoning": "Remission represents a meaningful change in the status of the same condition \u2014 the OLD fact described an active diagnosis, while the NEW fact updates that status to remission, making the unqualified 'has type 2 diabetes' no longer accurate."
+        },
+        {
+          "case_id": "071",
+          "category": "legal_status",
+          "old": "User's contract expires Dec 2026",
+          "new": "User signed a 2-year extension",
+          "ground_truth": "supersedes",
+          "predicted": "refines",
+          "confidence": 0.72,
+          "reasoning": "The extension adds detail about the contract's future but without knowing the extension's start date, we can't confirm it supersedes the Dec 2026 end date \u2014 it may push it to Dec 2028, but that's an inference, not an explicit update."
+        },
+        {
+          "case_id": "102",
+          "category": "hedging",
+          "old": "User is moving to Austin in June",
+          "new": "User is now thinking about Nashville instead of Austin",
+          "ground_truth": "supersedes",
+          "predicted": "refines",
+          "confidence": 0.72,
+          "reasoning": "The new memory uses hedged language ('thinking about') indicating a consideration rather than a firm change, so per critical rule 6 this is not a confirmed supersession \u2014 both facts should be retained."
+        },
+        {
+          "case_id": "104",
+          "category": "hedging",
+          "old": "User wants to launch the product in May",
+          "new": "User is reconsidering the May launch and may push to July",
+          "ground_truth": "independent",
+          "predicted": "refines",
+          "confidence": 0.85,
+          "reasoning": "Hedged language ('reconsidering', 'may push') signals no firm commitment to a change, so the original May plan is not superseded \u2014 only uncertain."
+        }
+      ]
+    }
+  },
+  "raw_responses": {
+    "claude-haiku-4-5-20251001|002": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"The NEW memory explicitly updates the same single-valued attribute (primary email address) with a different value, a clear case of attribute change.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|001": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"User's display mode preference changed from light to dark mode, a direct single-valued attribute update with explicit contradiction.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|004": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"The NEW memory directly contradicts and replaces the OLD memory on the same single-valued attribute (favorite color), with explicit change in the preference value.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|003": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"The word 'switched' is an explicit strong supersedes signal indicating the user's primary editor changed from VS Code to Cursor, making the OLD fact outdated.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|006": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"The NEW memory explicitly updates the same single-valued attribute (working hours) with a direct time shift, signaled by 'now', clearly replacing the OLD schedule.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|005": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"The NEW memory explicitly negates the OLD dietary status with a clear state change (started eating meat again), making the vegetarian classification no longer accurate.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|008": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"The NEW memory explicitly states the user obtained a new phone number, directly replacing the previous contact attribute.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|007": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.96,\n  \"reasoning\": \"The NEW memory explicitly states a migration away from Anthropic API to OpenAI API, using the strong supersession signal 'migrated', which indicates the OLD tool/service has been replaced by a new one.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|009": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.99,\n  \"reasoning\": \"The NEW memory explicitly states a location change ('moved to'), which directly contradicts and replaces the OLD memory about residence.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|010": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.96,\n  \"reasoning\": \"The NEW memory indicates a role change at the same employer via explicit promotion signal ('got promoted'), replacing the previous individual contributor role.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|011": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"The relationship status changed from engaged to married, which is an explicit state transition that replaces the prior fact.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|012": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.96,\n  \"reasoning\": \"The OLD memory describes an ongoing state (taking lessons), and the NEW memory indicates that state has ended (finished the course), which is a clear status change marked by explicit completion language.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|013": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"The NEW memory explicitly updates the counted headcount on the same entity (startup) from 5 to 12 using the strong supersedes signal 'grew to', making the OLD fact numerically outdated.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|014": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"User's relationship status changed from single to dating; 'dating Alex' directly negates the OLD state of being single.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|015": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"The NEW memory explicitly states a database migration ('moved production to'), which directly changes the same single-valued attribute (production database choice) and contradicts the OLD fact.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|016": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"The explicit marker 'upgraded' combined with a direct change to a single-valued attribute (plan tier) makes this a clear supersession\u2014free plan is replaced by Pro plan.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|017": {
+      "raw": "```json\n{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"NEW memory adds specific details (color and name) about the same cat without contradicting the OLD fact; both can coexist and OLD is naturally subsumed by the more detailed NEW fact.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|018": {
+      "raw": "```json\n{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"The NEW memory specifies a particular type of coffee the user likes, which naturally elaborates on the OLD generic preference without contradicting it\u2014both can coexist and the OLD fact remains true.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|019": {
+      "raw": "```json\n{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"The NEW memory adds specificity (seniority level, backend focus, Go specialization) to the OLD memory without contradicting it; both can be true simultaneously and the OLD fact is naturally subsumed by the NEW one.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|020": {
+      "raw": "```json\n{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"NEW memory specifies the exact count and ages of the children already established in OLD memory, adding concrete detail without contradicting it.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|021": {
+      "raw": "```json\n{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"The NEW memory specifies the type and frequency of exercise, adding concrete detail to the general OLD fact without contradicting it; both are true simultaneously and the OLD fact is naturally subsumed by the NEW one.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|022": {
+      "raw": "```json\n{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"The NEW memory specifies the exact model and processor of the Mac mentioned in the OLD memory, adding detail without contradicting it\u2014the user still uses a Mac, now identified as an M3 MacBook Pro.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|023": {
+      "raw": "```json\n{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"The NEW memory specifies the exact date within the month already known in the OLD memory, adding precise detail without contradicting the general fact that the birthday is in March.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|024": {
+      "raw": "```json\n{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"The NEW memory adds specific detail about what aspect of AI interests the user (agents and memory infrastructure) without contradicting the broader OLD fact that they are interested in AI generally.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|025": {
+      "raw": "```json\n{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"NEW memory adds a specific breed detail to the generic OLD fact about dog ownership, both true simultaneously without contradiction.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|027": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"Pickleball and tennis are different sports; liking one does not negate liking the other, and both facts can coexist without contradiction.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|026": {
+      "raw": "```json\n{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"NEW memory specifies the exact type of tea (Earl Grey) for the same morning preference, adding detail without contradicting the OLD fact.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|028": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.99,\n  \"reasoning\": \"Both memories describe different siblings (sister vs. brother, different names), so both facts should be retained together.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|029": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"Both facts describe different languages the user speaks; multilingualism means both can be true simultaneously without one replacing the other.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|030": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"OLD and NEW describe different tools serving different purposes (version control vs project management); both can coexist in the same workflow.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|031": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"OLD describes a past employment (2018) and NEW describes current employment; both are timestamped facts about different time periods and should both be retained as part of the user's employment history.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|032": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.99,\n  \"reasoning\": \"Both are distinct hobbies/interests on different topics; the NEW fact does not negate, replace, or contradict the OLD fact\u2014both can coexist.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|033": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.99,\n  \"reasoning\": \"The OLD and NEW memories describe different entities (mother vs. father) and should both be retained.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|034": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"Both are separate allergies affecting different food categories; the NEW memory adds an additional allergy without negating or replacing the OLD one.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|036": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"A single instance of running this morning does not supersede or refine the recurring pattern of running every morning; both facts coexist and the instance is already entailed by the pattern.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|035": {
+      "raw": "```json\n{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"The NEW memory adds a specific time and instance to the recurring pattern described in the OLD memory; both facts coexist (Tuesday meetings exist, and this Tuesday's meeting happens at 3pm).\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|039": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"The explicit linguistic marker 'cancelled' directly negates the status of the OLD fact; the user no longer has an active gym membership.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|038": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.96,\n  \"reasoning\": \"The NEW memory explicitly states a schedule change ('changed yoga from weekends to weekday evenings'), directly replacing the OLD memory's timing attribute with a new, contradictory one.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|040": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"The NEW memory explicitly states the user deleted their Twitter account, which directly negates and replaces the OLD state that the user was on Twitter.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|041": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.99,\n  \"reasoning\": \"The NEW memory explicitly negates the OLD relationship state with a strong linguistic marker ('broke up'), indicating a change in relationship status that makes the OLD fact no longer true.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|042": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"The NEW memory explicitly states the user quit smoking, which directly negates the OLD fact that the user smokes\u2014a clear state change marked by a strong supersession signal ('quit').\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|043": {
+      "raw": "```json\n{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"The NEW memory adds a contextual detail (nickname used in specific social settings) without contradicting the OLD memory that her full name is Alice; both facts coexist naturally.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|044": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"The NEW memory explicitly states a name change ('changed her last name'), directly updating the single-valued attribute of the user's surname from Chen to Patel.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|045": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"The NEW memory explicitly updates a single-valued attribute (pronoun preference) that directly contradicts the OLD memory; the word 'now' signals an active change in status.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|046": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.96,\n  \"reasoning\": \"The company name changed from Acme to Pinnacle; 'rebranded to' is an explicit linguistic marker of attribute supersession for the same entity.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|047": {
+      "raw": "```json\n{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"The NEW memory is a concrete realization of the OLD interest \u2014 the user has moved from general interest to specific action, adding detail without contradicting the original fact.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|049": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"OLD describes current emotional state; NEW describes a past event that may have caused it. Both are factual and should be retained\u2014one is a state, the other is a timestamped incident.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|048": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"The OLD memory described an ongoing search/looking state; the NEW memory reports that the search has ended with a concrete outcome (accepted offer), replacing the prior unresolved status.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|050": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"Test-driving a vehicle is a transient event that does not change the user's ownership status; both facts can coexist\u2014the user still owns the Tesla Model 3 and separately test-drove a Rivian.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|051": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"The NEW memory describes a state change of the same entity (Acme's subscription status) from trial to paid, which explicitly replaces the OLD temporary status.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|053": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"The word 'also' explicitly signals that both integrations coexist; enabling Notion does not replace or negate the Slack integration.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|052": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"The NEW memory updates a counted quantitative attribute (active user count) on the same entity (Acme), directly replacing the prior state.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|054": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"The NEW memory explicitly marks completion of a state (onboarding) that was previously in-progress in the OLD memory, using the strong supersedes signal 'completed' and a past timestamp.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|055": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"NEW memory explicitly updates a single-valued quantified attribute (salary) with a clear linguistic marker ('got a raise to'), making the OLD salary figure obsolete.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|056": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"These describe two different financial products at two different institutions; opening a savings account at Ally does not change the fact of owning a checking account at Chase.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|057": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"The NEW memory updates the quantified attribute (MRR) on the same entity from 1k to 5k, which is an explicit state change that makes the OLD value obsolete.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|058": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"Feature X has progressed through project stages; 'in development' is the next sequential state after 'in design review', making the old status obsolete.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|059": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"The NEW memory describes the completion and state change of Feature X from 'in development' to 'shipped to production', which directly replaces the OLD status.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|060": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"The NEW memory documents the completion and merge of the project described in the OLD memory, marking the end of the 'working on' state.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|061": {
+      "raw": "```json\n{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"The NEW memory adds a specific detail about the scope/impact of the same bug without contradicting the fact that it remains open; 'also' signals additive information rather than replacement.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|062": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"The OLD memory describes the user's home base/permanent location, while the NEW memory describes a temporary travel destination this week; both are true simultaneously and refer to different temporal contexts.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|063": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"The company's office relocation from NYC to Brooklyn is a change of location for the same entity (user's workplace), and 'moved' is an explicit supersession signal that updates the office location fact.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|064": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"A single Delta booking does not supersede a stated preference/pattern for United; one instance of flying a different airline alongside a recurring preference is independent, not a preference change.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|065": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"The NEW memory explicitly describes a relocation (strong supersedes signal), updating the user's current location from Mumbai to Bangalore, making the OLD fact obsolete.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|066": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"Amoxicillin is a penicillin-type antibiotic but a distinct drug; documenting separate allergies to both is medically important for prescribing decisions, even though cross-reactivity is common.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|068": {
+      "raw": "```json\n{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"The NEW memory adds a specific clinical status update to the OLD fact without negating the diagnosis itself; type 2 diabetes in remission is still type 2 diabetes, and both facts should be retained for accurate medical context.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|069": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"Green card is a strictly higher immigration status that replaces H1B visa status; the user has moved from temporary work visa to permanent resident status.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|070": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"Incorporation state (Delaware) and foreign qualification state (California) describe different legal statuses in different jurisdictions; both can be true simultaneously and neither replaces the other.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|071": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"The NEW memory of a signed 2-year extension explicitly changes the contract expiration date from Dec 2026 to Dec 2028, replacing the OLD expiration fact with a new one.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|072": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"Both subscriptions can coexist; adding a second news subscription does not negate the first one without explicit cancellation language.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|073": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"The NEW memory explicitly states an upgrade of the same service (Netflix plan tier), which is a direct change to a single-valued attribute; 'upgraded to' is a strong supersedes signal.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|074": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"The NEW memory explicitly states the OLD membership status has ended ('lapse' is a STRONG SUPERSEDES signal), replacing the active subscription state with an inactive one.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|075": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"Email signature is an authoritative record of current job title; 'Staff Engineer' is a promotion from 'Senior Engineer' and replaces the prior title as the single-valued attribute.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|076": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"The NEW memory explicitly states a change in reporting line ('now reports to Marcus after a re-org'), using a clear temporal marker and explicit supervisor replacement that directly contradicts the OLD fact.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|077": {
+      "raw": "```json\n{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"The NEW memory adds a temporary, additional responsibility ('also serving as interim') alongside the existing manager role, rather than replacing it\u2014a classic refines pattern.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|078": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"The explicit marker 'upgraded to' indicates the user's operating system has changed from Sonoma to Sequoia, directly replacing the previous OS state.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|079": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"The NEW memory explicitly states an upgrade (strong linguistic marker) of a quantified attribute on the same entity, directly replacing the OLD RAM specification.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|080": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"The NEW memory describes a second device acquired in addition to the original, signaled by 'also got', making it a separate fact rather than a replacement of the iPhone 14.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|081": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.94,\n  \"reasoning\": \"The NEW memory explicitly states a switch in billing method ('switched all billing to'), directly replacing the OLD payment method as the active card for charges.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|082": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"The NEW memory describes an additional payment method alongside the OLD one; the linguistic signal 'as a backup' indicates both coexist rather than one replacing the other.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|083": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"The NEW memory explicitly updates the same single-valued attribute (card expiry date) with a new value, replacing the OLD fact.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|084": {
+      "raw": "```json\n{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"The NEW memory adds a billing frequency detail (annual instead of monthly) to the same plan tier (Starter), refining the OLD memory without contradicting it\u2014both facts can coexist and the NEW fact is a more complete description of the user's current subscription state.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|085": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"The NEW memory explicitly states a plan downgrade ('downgraded to'), which directly changes the user's subscription tier from Pro to Starter, making the OLD fact obsolete.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|086": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.99,\n  \"reasoning\": \"The OLD memory describes a medical allergy (peanuts), while the NEW memory describes a beverage preference (oat milk in coffee) \u2014 these are different attribute types on the same user and both should be retained.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|088": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"The NEW memory updates the count on the same entity via an explicit quantified purchase ('10 additional seats'), changing the seat total from 5 to 15, making the OLD fact obsolete.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|087": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"The NEW memory explicitly changes a single-valued dietary attribute ('now' signals state change), replacing veganism with lacto-vegetarianism\u2014a distinct and narrower diet that contradicts the old fact.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|090": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"The NEW memory records a completed commitment ('switched to') that resolves the OLD memory's open evaluation state, with explicit supersession marker 'switched' and unambiguous attribute match on the same entity's memory layer choice.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|089": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"The OLD memory identifies a specific champion contact at Acme, and the NEW memory explicitly states that champion has left and been replaced by a different person, directly updating the single-valued 'Acme champion' attribute.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|092": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"A single skipped instance does not supersede a recurring pattern; the weekly 1:1 remains the standing practice, and the absence this week is a transient deviation.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|091": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"The NEW memory explicitly changes a single-valued attribute (standup time) from 9am to 10am using the strong supersedes signal 'moved permanently', directly replacing the OLD fact.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|094": {
+      "raw": "```json\n{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"NEW memory is a reversion that adds temporal detail to the OLD fact while preserving and confirming the original state; the attempted switch to light mode is a transient deviation that ultimately upholds the dark mode preference.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|093": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.96,\n  \"reasoning\": \"The NEW memory explicitly changes the day and timing of a recurring meeting that was specified in the OLD memory, using the clear linguistic marker 'moved to', making this a direct schedule update.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|095": {
+      "raw": "```json\n{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"The NEW memory adds temporal detail about a transient deviation (a brief move to Austin) that ultimately preserves the OLD state (user lives in San Francisco). This is a reversion pattern that refines rather than supersedes the original fact.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|096": {
+      "raw": "```json\n{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"The NEW memory describes a transient deviation (experimentation with Cursor) that ultimately preserves the OLD state (Vim as primary editor), so it refines rather than supersedes the original fact.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|097": {
+      "raw": "```json\n{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"The NEW memory describes a temporary deviation from vegetarianism (the reversion case in critical rule 3), ultimately preserving the OLD state; both facts are compatible and the NEW adds detail about a transient period without negating the original dietary pattern.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|098": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"The OLD memory describes the user's vehicle; the NEW memory describes the user's wife's vehicle. They are different entities owned by different people, so both facts should be retained.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|099": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"The NEW memory describes a second, separate entity (Luna) added to the user's life, not a replacement or update of the first dog (Buddy). Both facts should be retained.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|100": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"User can have both a primary manager (Sarah) and an additional dotted-line manager (Marcus) simultaneously; these are different reporting relationships, not a replacement of the same role.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|101": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"OLD describes personal GitHub use and NEW describes work GitLab use \u2014 different platforms, different contexts (personal vs. work), both can coexist without contradiction.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|102": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.78,\n  \"reasoning\": \"The NEW memory uses hedged language ('thinking about') indicating a non-committal consideration, not a firm change, so both the firm June Austin plan and the tentative Nashville exploration should be retained as separate facts pending commitment.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|103": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"The NEW memory explicitly contradicts the OLD memory via the 'instead' signal, indicating the user switched from Spanish lessons to French learning, replacing the original plan.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|104": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"The NEW memory uses hedged language ('reconsidering', 'may push') indicating deliberation rather than a firm commitment, so it does not yet supersede the OLD plan; both the original May target and the emerging July possibility should coexist until the user commits to a change.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|105": {
+      "raw": "```json\n{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"NEW memory adds detail about the user's preference within the same interview process, without contradicting or replacing the fact that they are interviewing at multiple companies.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|106": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"The NEW memory is a strict generalization that subsumes the OLD specific fact; knowing the user is allergic to all pome fruits makes the narrow Granny Smith apple allergy redundant and potentially incomplete.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|107": {
+      "raw": "```json\n{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"The NEW memory (phobia of all dogs) is a strict generalization that subsumes the OLD specific fact (fear of Golden Retrievers), making the older narrow claim redundant.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|108": {
+      "raw": "```json\n{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"The NEW memory provides a specific reason and broader framework for the OLD fact (shellfish avoidance is part of kosher dietary law), adding meaningful context without contradicting the original restriction.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|109": {
+      "raw": "```json\n{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.82,\n  \"reasoning\": \"The NEW memory provides a specific behavioral implementation and underlying reason for the OLD preference (disliking early meetings), rather than contradicting it\u2014blocking all mornings for deep work naturally prevents and explains the aversion to pre-10am meetings.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|110": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"Both memories are timestamped to different periods (2023 vs 2025) and describe employment at different companies; they are historical facts about different time periods, not a replacement of the same attribute.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|111": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"Both facts describe different time periods (last quarter vs. this quarter) and are both factually true; neither replaces the other.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|112": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"These describe different time periods (2024 vs 2026) and different OKRs for those periods; both are factual and should be retained as separate historical/current records.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|113": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"Both facts are timestamped to different periods (last month vs. now); they describe the same attribute (emotional state) at different points in time, both remain factually true and informative.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|114": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"Opening a vim tutorial is a single exploratory instance and does not negate the established fact that the user regularly uses VS Code as their primary editor.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|115": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"A single instance of drinking tea does not contradict or replace a stated preference for coffee; both facts can coexist (user likes coffee but occasionally drinks tea).\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|116": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"The OLD memory describes the primary calendar system; the NEW memory describes adding a second calendar tool for a different purpose (personal events), signaled by 'added' \u2014 both can coexist without contradiction.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|117": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"Running marathons (established pattern) and signing up for a half-marathon (specific upcoming event) are both true and describe different scope/instances; the half-marathon does not negate the marathon-running habit.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|118": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"These describe contributions to different projects (React vs TanStack Query) at different times; both facts remain true and neither replaces the other.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|119": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.98,\n  \"reasoning\": \"Reading tech blogs and participating in a book club are two distinct activities and learning behaviors; the new fact does not replace or contradict the old one.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|120": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.99,\n  \"reasoning\": \"OLD describes the daughter's grade level, NEW describes the son's grade level\u2014different children, different facts, both true simultaneously.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|121": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"User can use both tools for different purposes (personal notes in Notion, research notes in Obsidian); these are separate entities and use cases, not a replacement of one with the other.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|122": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"User has a recurring commute mode (subway) and a recurring variation by day (bikes on Fridays); both can coexist as true facts about different time periods within the same week.\"\n}\n```",
+      "error": null
+    },
+    "claude-haiku-4-5-20251001|123": {
+      "raw": "```json\n{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"Both are separate media formats the user consumes during commute; 'too' signals addition of a second activity rather than replacement of the first.\"\n}\n```",
+      "error": null
+    },
+    "claude-sonnet-4-6|001": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"Display mode preference is a single-valued attribute and dark mode directly contradicts and replaces the previously stored light mode preference.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|002": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"The same single-valued attribute (primary email) has changed to a new value, making the old value obsolete.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|004": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"Same single-valued attribute (favorite color) has changed from blue to green, making the old fact obsolete.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|003": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"Explicit 'switched from VS Code to Cursor' directly negates the OLD memory with a strong supersession signal, indicating a clear change in the same single-valued attribute (preferred editor).\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|005": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"The new memory explicitly reverses the dietary status described in the old memory \u2014 the user is no longer vegetarian.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|006": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"The same single-valued attribute (working hours schedule) has changed, with explicit 'now' signal indicating the old schedule has been replaced by a new one.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|007": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"The word 'migrated entirely' is an explicit marker indicating the user has replaced Anthropic API usage with OpenAI API, directly negating the old fact.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|008": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"The user explicitly got a new phone number, replacing the old one \u2014 same single-valued attribute (phone number) with an explicit update signal.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|009": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"The word 'moved' is an explicit supersession signal indicating a change of residence, replacing San Francisco with New York as the user's current location.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|010": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.90,\n  \"reasoning\": \"A promotion to engineering manager changes the user's role/title, replacing the software engineer position at Acme with a new one.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|011": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"The user's relationship status changed from engaged to married, explicitly completing and replacing the prior engagement state.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|012": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"The NEW memory explicitly marks the end of the ongoing state described by the OLD memory \u2014 the Spanish course has concluded, so 'is taking' is no longer current.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|013": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"The headcount of the same single entity (user's startup) has been updated from 5 to 12, which is a direct quantified attribute change on the same entity.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|014": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"The user's relationship status has changed from single to actively dating someone, which is a single-valued attribute update that replaces the prior state.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|015": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"The word 'moved' explicitly signals a change in the same single-valued attribute (production database), and MySQL directly replaces Postgres as the production database.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|017": {
+      "raw": "{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"The new memory adds specific details (color and name) about the same cat without contradicting the old fact.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|016": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"The user's plan status is a single-valued attribute that has explicitly changed from free to Pro, directly replacing the old fact.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|018": {
+      "raw": "{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"The new memory adds specific detail (single-origin Ethiopian) to the general preference without contradicting it; both facts are simultaneously true and the old fact is naturally subsumed.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|019": {
+      "raw": "{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"The NEW memory adds specific detail (senior level, backend focus, Go specialization) to the OLD generic fact without contradicting it.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|021": {
+      "raw": "{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"The new memory specifies the type and frequency of the user's exercise, adding detail to the existing fact without contradicting it.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|020": {
+      "raw": "{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"The new memory adds specific count and ages to the existing fact that the user has children, without contradicting it.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|022": {
+      "raw": "{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"The NEW memory specifies the exact model (M3 MacBook Pro) of the Mac the user already uses, adding detail without contradicting the OLD fact.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|023": {
+      "raw": "{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"The new memory adds a specific date to the previously known birth month, making it a more precise version of the same fact without contradicting it.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|024": {
+      "raw": "{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"The NEW memory narrows the broader interest in AI to a specific subfield (AI agents and memory infrastructure), adding detail without contradicting the OLD fact.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|025": {
+      "raw": "{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.99,\n  \"reasoning\": \"The new memory adds a specific breed detail to the existing fact that the user has a dog, without contradicting it.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|026": {
+      "raw": "{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"The NEW memory specifies the type of tea (Earl Grey) without contradicting the OLD memory; it is a more detailed version of the same preference.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|027": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"These describe two different sports/activities; liking pickleball and playing tennis are separate facts that can both be true simultaneously.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|028": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"The two memories describe different siblings (sister vs. brother, different names), so both facts can and should coexist.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|029": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.72,\n  \"reasoning\": \"Speaking French does not negate speaking English \u2014 users commonly speak multiple languages, so both facts can be true simultaneously unless there is explicit indication of replacement.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|031": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.82,\n  \"reasoning\": \"Both facts are timestamped to different time periods (2018 vs. now) and both can be true simultaneously as historical and current facts respectively.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|030": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"The two memories describe different tools used for different purposes (code hosting vs. project management), so both facts can coexist without contradiction.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|032": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"These describe two different hobbies/interests; liking painting does not replace or contradict liking hiking.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|033": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.99,\n  \"reasoning\": \"The two memories describe different entities (mother vs. father) and are simply two separate family facts that can both be true simultaneously.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|034": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"These describe two different allergens; both facts are true simultaneously and neither replaces the other.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|035": {
+      "raw": "{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.87,\n  \"reasoning\": \"The new memory adds specific time detail (3pm) to the same recurring Tuesday team meeting without contradicting it.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|036": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.85,\n  \"reasoning\": \"A single instance of running this morning does not supersede the recurring pattern of running every morning; both facts can be true simultaneously.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|039": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.99,\n  \"reasoning\": \"The NEW memory explicitly cancels the OLD membership status using the strong supersedes signal word 'cancelled', directly negating the prior state.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|038": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"The NEW memory explicitly states the yoga schedule 'changed from weekends to weekday evenings', directly replacing the OLD scheduled attribute with a new one.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|040": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.99,\n  \"reasoning\": \"The new fact explicitly negates the old fact \u2014 deleting a Twitter account directly reverses being on Twitter.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|041": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.99,\n  \"reasoning\": \"The relationship status has explicitly ended ('broke up'), directly negating the OLD fact that the user is dating Alex.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|042": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"The new memory explicitly states the user quit smoking, directly negating and replacing the old fact that the user smokes.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|043": {
+      "raw": "{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"The nickname 'Al' is an additional detail about how the user is addressed in specific contexts, not a replacement of their full name Alice.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|044": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"The user's last name has explicitly changed due to marriage, directly replacing the old last name with a new one for the same single-valued attribute.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|045": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"The same single-valued attribute (pronoun preference) has explicitly changed, with 'now uses' as a strong supersession signal indicating the old pronoun set has been replaced by the new one.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|046": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"The company name changed via an explicit rebrand, meaning the OLD name is no longer current and is directly replaced by the NEW name.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|047": {
+      "raw": "{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"Starting a certification program is a specific, concrete step that adds detail to the general interest in counseling as a career without contradicting it.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|048": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"Accepting a job offer at TechCo directly resolves and ends the job search, replacing the 'looking for a new job' state with a concluded outcome.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|049": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.72,\n  \"reasoning\": \"The OLD memory describes a current general state of stress, while the NEW memory refers to a specific past event (yesterday), so both can coexist as separate timestamped facts.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|050": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"Test-driving a different vehicle does not imply the user sold or replaced their Tesla; both facts can be true simultaneously.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|051": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"Acme's trial status has explicitly ended and changed to a paying plan, a direct state transition for the same entity.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|052": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"The new memory updates the counted/quantified active user attribute for the same entity (Acme), replacing the old count of 3 with 7.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|053": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"The word 'also' signals an additive second integration, not a replacement of the existing Slack integration.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|054": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"The NEW memory explicitly states that Acme completed onboarding, directly replacing the OLD state of being 'in onboarding' \u2014 a clear single-valued status change.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|055": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"The new salary of 95k explicitly replaces the old salary of 80k \u2014 a single-valued quantified attribute updated by a raise.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|056": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"These are two different account types at two different banks; both facts can be true simultaneously and neither replaces the other.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|057": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"The MRR for the same entity has been updated to a new quantified value (5k), explicitly replacing the old value (1k).\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|059": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"The development state of Feature X has explicitly changed to a completed/shipped state, directly replacing the old status.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|058": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"Feature X has progressed from design review to development, representing a clear stage change for the same single entity.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|060": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"Merging the PR signals the auth refactor work has completed, explicitly ending the 'working on' state described in the OLD memory.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|061": {
+      "raw": "{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.88,\n  \"reasoning\": \"The new fact adds detail about Bug 1234's scope (mobile impact) without contradicting or replacing the open status described in the old memory.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|062": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"The new memory describes a temporary travel state this week, not a change of base location, so both facts remain true simultaneously.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|063": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.87,\n  \"reasoning\": \"The company's office location changed from NYC (implied Manhattan or general NYC) to a specific borough, Brooklyn, which is a new location state replacing the old one \u2014 though Brooklyn is technically within NYC limits, the 'moved offices' signal indicates a physical relocation event updating the prior location fact.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|064": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.72,\n  \"reasoning\": \"A single Delta booking is one specific instance that does not supersede the recurring pattern of flying United for business trips; both facts can coexist.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|065": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"The word 'relocated' is an explicit strong supersession signal, and city of residence is a single-valued attribute that has clearly changed from Mumbai to Bangalore.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|066": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.82,\n  \"reasoning\": \"Penicillin and amoxicillin are related (amoxicillin is a penicillin-type antibiotic) but are distinct drugs with separately documented allergies; both facts should be retained as they describe different specific allergens, and the new fact does not negate or broaden the old one.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|068": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"Remission represents a meaningful change in the status of the same condition \u2014 the OLD fact described an active diagnosis, while the NEW fact updates that status to remission, making the unqualified 'has type 2 diabetes' no longer accurate.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|069": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"Obtaining a green card is a direct immigration status change that replaces the H1B visa status \u2014 a single-valued attribute (immigration status) that has clearly changed.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|070": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"Foreign qualification in California is a separate legal registration that adds a new jurisdiction without replacing or contradicting the Delaware incorporation.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|071": {
+      "raw": "{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.72,\n  \"reasoning\": \"The extension adds detail about the contract's future but without knowing the extension's start date, we can't confirm it supersedes the Dec 2026 end date \u2014 it may push it to Dec 2028, but that's an inference, not an explicit update.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|072": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.72,\n  \"reasoning\": \"These are two different publications; the user may subscribe to both simultaneously, and there is no explicit signal that the NYT subscription was cancelled or replaced.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|073": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"The word 'upgraded' explicitly signals a plan change on the same single-valued attribute (Netflix subscription tier), replacing Standard with Premium.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|074": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"The NEW memory explicitly states the GitHub Pro membership has lapsed, directly negating and ending the OLD state of having an active annual GitHub Pro membership.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|075": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.90,\n  \"reasoning\": \"The user's title has changed from 'Senior Engineer' to 'Staff Engineer', a single-valued attribute update indicating a role change, evidenced by the updated email signature.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|077": {
+      "raw": "{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"The new role is additive ('also serving as interim VP'), expanding the user's responsibilities alongside their existing manager role rather than replacing it.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|076": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"The reporting relationship is a single-valued attribute that has explicitly changed ('now reports to Marcus') after a re-org, directly replacing the old fact about reporting to Sarah.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|078": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"The new memory explicitly states an OS upgrade, replacing the single-valued OS version attribute with a newer version.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|079": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"The word 'upgraded' explicitly signals a change to the same single-valued hardware attribute (RAM capacity), making the old 16GB fact obsolete.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|080": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"The word 'also' and the purpose 'for testing' indicate a second device was added alongside the existing iPhone 14, not replacing it.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|081": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"The word 'switched' and 'all billing' explicitly indicates the payment method has changed from Visa 1234 to corporate Amex, replacing the old fact.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|082": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"User is adding a second payment method alongside Apple Pay, not replacing it; 'added as a backup' explicitly signals both coexist.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|083": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"The user explicitly updated their billing card, replacing the old expiry date 12/26 with a new expiry date 12/29 \u2014 a single-valued attribute (card expiry) that has changed.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|084": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"The user explicitly switched from monthly to annual billing on the same Starter plan, changing the billing cycle attribute of the same subscription.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|085": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"The word 'downgraded' is an explicit supersession signal and the subscription plan is a single-valued attribute that has changed from Pro annual to Starter.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|086": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.99,\n  \"reasoning\": \"The OLD memory describes a food allergy while the NEW memory describes a beverage preference \u2014 these are different attribute types about different entities.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|087": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"The same single-valued dietary attribute changed \u2014 lacto-vegetarian explicitly contradicts vegan by allowing dairy, replacing the prior stricter classification.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|089": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"The NEW memory explicitly states Sarah left and names a replacement champion at the same company, directly replacing the single-valued 'champion' attribute for Acme.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|088": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"The new memory updates the seat count for the same entity (Acme) by adding 10 seats to the existing 5, resulting in 15 total seats, which supersedes the old count of 5.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|090": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"The NEW memory uses explicit supersession signal 'switched' and indicates Acme moved from evaluating to actually adopting Mem0, replacing the prior evaluation status.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|091": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"The word 'permanently' combined with 'moved' explicitly signals a lasting schedule change to the same recurring event, replacing the 9am time with 10am.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|092": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"A single skipped instance does not supersede the recurring weekly pattern; both facts can be true simultaneously per critical rule 2.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|093": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"The new memory explicitly states the retros moved from Thursday to Wednesday, directly changing the single-valued schedule attribute.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|094": {
+      "raw": "{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"The new fact describes a transient deviation (tried light mode) that ultimately reverts to the original state (dark mode), which is a classic reversion pattern that refines rather than supersedes the original fact.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|095": {
+      "raw": "{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"The user temporarily moved away but returned to SF, so the original fact is preserved; the new memory adds detail about a transient deviation without changing the underlying state.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|096": {
+      "raw": "{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"The new fact describes a transient deviation (experimenting with Cursor) that ended in a reversion to Vim, which preserves and reinforces the OLD memory rather than replacing it.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|097": {
+      "raw": "{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"The NEW memory describes a transient deviation that ultimately reverts to the OLD state (user is still vegetarian), so it refines rather than supersedes the original fact.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|098": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"The new vehicle belongs to a different person (his wife) and is a second car, not a replacement for the user's 2022 Tesla Model 3.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|099": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"User added a second dog (Luna) alongside the existing dog (Buddy); both facts remain true simultaneously per Rule 5.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|100": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"The new dotted-line relationship with Marcus is an additional reporting relationship alongside Sarah, not a replacement of her as manager.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|101": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"The two facts describe different entities and contexts: personal GitHub usage vs. a company-provided GitLab instance for work \u2014 both can be simultaneously true.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|102": {
+      "raw": "{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.72,\n  \"reasoning\": \"The new memory uses hedged language ('thinking about') indicating a consideration rather than a firm change, so per critical rule 6 this is not a confirmed supersession \u2014 both facts should be retained.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|103": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"The user explicitly switched from Spanish to French, directly replacing the old language-learning plan with a new one for the same single-valued attribute.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|104": {
+      "raw": "{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.85,\n  \"reasoning\": \"Hedged language ('reconsidering', 'may push') signals no firm commitment to a change, so the original May plan is not superseded \u2014 only uncertain.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|105": {
+      "raw": "{\n  \"verdict\": \"refines\",\n  \"confidence\": 0.87,\n  \"reasoning\": \"The NEW memory adds a preference detail (leaning toward TechCo) without contradicting the OLD fact that the user is interviewing at multiple companies; both can be true simultaneously.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|106": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"The new memory is a strictly broader generalization that fully subsumes the old specific fact, making the Granny Smith allergy redundant per Critical Rule 4.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|107": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"The NEW memory is a broader generalization (phobia of all dogs) that subsumes the OLD specific fact (fear of Golden Retrievers), making the narrower fact redundant per the generalization rule.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|108": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.87,\n  \"reasoning\": \"Keeping kosher is a broader dietary framework that subsumes and explains the shellfish restriction, while also extending to all non-kosher seafood \u2014 the narrower fact is redundant once the broader religious dietary practice is known.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|110": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.85,\n  \"reasoning\": \"These describe different time periods (2023 vs 2025) and may both be true \u2014 the user could have left Stripe and joined Anthropic, but both timestamped facts are historically valid and should be retained independently.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|109": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.87,\n  \"reasoning\": \"Blocking all mornings for deep work is a broader scheduling policy that subsumes and replaces the narrower dislike of pre-10am meetings, as it extends the no-meeting period across the entire morning rather than just before 10am.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|111": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"These describe different time periods (last quarter vs. this quarter), both facts are historically true and timestamped, so both should be retained.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|112": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.82,\n  \"reasoning\": \"These describe OKRs for different years (2024 vs 2026), so both facts remain true simultaneously as historical and current records respectively.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|114": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.85,\n  \"reasoning\": \"Opening a vim tutorial is a single instance that does not indicate the user has switched editors; both facts can be true simultaneously.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|113": {
+      "raw": "{\n  \"verdict\": \"supersedes\",\n  \"confidence\": 0.82,\n  \"reasoning\": \"The new memory explicitly updates the user's emotional state from stressed to doing better, indicating a change in the same single-valued attribute (current emotional state), though confidence is moderate since stress and 'doing better' are somewhat different dimensions.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|115": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"A single instance of drinking tea does not supersede a general preference for coffee; both facts can be true simultaneously.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|116": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"The user is adding a second calendar for personal events alongside the existing Google Calendar, not replacing it.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|117": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.82,\n  \"reasoning\": \"Signing up for a half-marathon is a separate event from the established pattern of running marathons; both facts can coexist as the new fact describes a specific upcoming instance of a different race distance, not a replacement of the recurring marathon pattern.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|118": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"These describe contributions to two different open-source projects at different times, so both facts can coexist independently.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|119": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"Reading tech blogs and starting a book club are two different activities/habits that can coexist without contradiction.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|120": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.97,\n  \"reasoning\": \"These describe different children (daughter vs. son) at different grade levels, so both facts remain true simultaneously.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|121": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.82,\n  \"reasoning\": \"The NEW memory describes using Obsidian specifically for research notes, while the OLD memory describes Notion for personal notes \u2014 these are different use cases and potentially complementary tools, not a replacement of the same single-valued attribute.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|122": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"Biking on Fridays is a specific variation/exception to the general subway commute pattern, not a replacement \u2014 both facts can be true simultaneously.\"\n}",
+      "error": null
+    },
+    "claude-sonnet-4-6|123": {
+      "raw": "{\n  \"verdict\": \"independent\",\n  \"confidence\": 0.92,\n  \"reasoning\": \"The word 'too' signals an additive behavior alongside the existing podcast habit, not a replacement of it.\"\n}",
+      "error": null
+    }
+  }
+}
