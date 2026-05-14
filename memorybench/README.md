@@ -14,7 +14,7 @@ LongMemEval measures something different: **given 50-session memory traces, can 
 
 See `results.md` for the latest scored run.
 
-**Headline:** Aurra scores **85.3%** on a 232-question subset of LongMemEval-S, with K=30 retrieval as the production default. This places Aurra above Letta (83.2%) and below MemMachine (93.0%). Full-500-question run scheduled for September 2026.
+**Headline:** Aurra scores **85.3%** on a 232-question subset of LongMemEval-S, with K=30 retrieval as the production default. Among systems with verifiable public LongMemEval scores, this places Aurra below MemPalace (96.6%), OMEGA (95.4%), and Emergence AI (86%), and above Zep/Graphiti (71.2%). Full-500-question run scheduled for September 2026. See `comparison.md` and `SOURCES.md` for citations and N/A notes on systems that have not published LongMemEval scores.
 
 Production default of K=30 was shipped May 13, 2026; the benchmark configuration and production configuration are now the same.
 
@@ -23,7 +23,8 @@ Production default of K=30 was shipped May 13, 2026; the benchmark configuration
 - `README.md` — this file, scope + index
 - `results.md` — current scored runs, with caveats
 - `methodology.md` — how the benchmark runs: dataset selection, K parameter, prompt versions, scoring
-- `comparison.md` — Aurra vs Letta, Mem0, Zep, MemMachine, OMEGA, MemPalace at same configuration
+- `comparison.md` — Aurra vs other memory systems with verified public LongMemEval scores. Systems without public scores are listed as N/A with explanatory notes.
+- `SOURCES.md` — explicit URL citation for every number in this directory
 
 ## What's NOT here yet
 
