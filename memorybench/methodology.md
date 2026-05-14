@@ -96,3 +96,58 @@ When the full 500-Q run lands (September 2026), reproduction code + raw outputs 
 See `comparison.md` for side-by-side numbers across Aurra, Letta, Mem0, Zep, MemMachine, OMEGA, and MemPalace.
 
 **Important caveat:** comparing the 232-Q subset score to other systems' full-500 scores is apples-to-oranges. The full-500 run is the apples-to-apples comparison, scheduled for September 2026. Until then, all cross-system comparisons in this directory carry an asterisk.
+
+---
+
+## Cost-efficient resumption path (added May 14, 2026 ~12:25 AM ET)
+
+The original September 2026 timeline assumed a full-500-Q run cost of ~$200 (full re-ingestion). After analyzing trace overlap between the May 11 232-Q subset and the remaining 268 questions, we have a cheaper path that brings the full-500 number into reach without waiting for September.
+
+### The finding
+
+LongMemEval-S has 19,195 unique haystack sessions across all 500 questions. The May 11 232-Q subset ingested 9,994 of them. The remaining 268 questions share 2,128 sessions with the subset (already ingested) and introduce 9,201 net-new sessions.
+
+**Net effect: resuming the run from the existing 232-Q ingestion needs ~52% less ingestion work than a full re-run.**
+
+### Cost basis
+
+Reference: Day 14 PM run, 232 questions, K=30, cost ~$11-13 total (extraction + query + judge). Scaling proportionally for the 268-Q remainder:
+
+| Component | Day 14 actual (232 Q) | Remaining 268 Q (est) | Notes |
+|---|---|---|---|
+| Ingestion (extraction) | ~$5 | ~$5-7 | 9,201 new sessions, ~$0.0006/session at Opus rates |
+| Query (K=30) | ~$4 | ~$5 | 268 Q × ~$0.018 each |
+| Judge (Opus) | ~$2-3 | ~$2-3 | 268 Q × ~$0.01 each |
+| **Total** | **~$11-13** | **~$13-15** | At current model defaults |
+
+This estimate assumes no failed runs. The Day 12 baseline (May 9) cost $510 across 6 dead runs while the pipeline was being debugged; that failure mode is not the steady state.
+
+### Further cost reductions (Tier 2, only after the $15 run is verified working)
+
+If the $15 baseline run succeeds, future re-runs (e.g. variance bars, BYO-LLM variants) can be cheaper still:
+
+| Optimization | Expected savings | Risk |
+|---|---|---|
+| Haiku 4.5 for extraction (vs Opus 4.7) | ~5x cheaper extraction (~$1 vs ~$5) | Quality unknown; 50-Q calibration first |
+| Sonnet 4.6 for judge (vs Opus 4.7) | ~3x cheaper judge (~$1 vs ~$3) | Judge calibration vs existing Opus-scored 232-Q |
+| Cache ingested traces across re-runs | Ingestion only runs once for life of dataset | Already true if Supabase memory store stays stable |
+| Gemini 2.5 Flash extraction (BYO-LLM, May 13 ship) | ~10x cheaper than Opus | Different model family, accuracy unknown |
+| Grok 4 fast extraction (BYO-LLM, May 13 ship) | xAI pricing competitive | Same calibration step |
+
+Combined Tier 2 path could bring future full-500 runs to ~$3-5 each. Not relevant for the first run; flagged for repeat runs.
+
+### Resumption preconditions
+
+Before running the 268-Q remainder, verify these things are still true:
+
+1. **Existing 232-Q memories are still in the database.** SELECT count by tenant on the company_id used for the run.
+2. **The extraction prompt has not changed materially since May 11.** Diff `app/memory_extractor.py` prompt strings.
+3. **The bi-temporal model shape has not changed.** Verify `valid_from`, `valid_to`, `superseded_by` semantics are unchanged.
+
+If any of those have drifted, do a 10-question calibration re-ingest first (~$0.50) to confirm new outputs match old outputs.
+
+### Run plan
+
+See `scripts/run_remaining_268.sh` for the exact command sequence. Wall-clock estimate: 3-5 hours including ingestion + query + scoring. Should be supervised (or run with output logging + periodic checks), not unattended overnight.
+
+Estimated budget: $15 hard ceiling. If spend approaches $30 with no end in sight, abort and investigate.
